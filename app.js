@@ -50,9 +50,7 @@ const add = function(num1, num2) {
   return `${num1} + ${num2} = ${num1 + num2}`;
 };
 
-let mePapaWriteTerribleFunctionNames = (num1,num2) => {
-  return `${num1} +${num2} = ${num1 + num2}`;
-};
+let mePapaWriteTerribleFunctionNames = (num1,num2) => `${num1} + ${num2} = ${num1 + num2}`;
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 console.log('Let\'s do some math:', add(4, 5));
@@ -63,9 +61,11 @@ console.log('Anything you can add, I can add better: ',mePapaWriteTerribleFuncti
 // When we have multiple parameters, they must be wrapped in parentheses
 // We can only remove the parentheses when there is a single parameter
 const addOneLiner = (num1, num2) => `${num1} + ${num2} = ${num1 + num2}`;
+let areYouMyFunction = (num1,num2) => `${num1**num2}`;
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('Add as a one-liner:', addOneLiner(4, 5));
+console.log('Add as a one-liner:', addOneLiner(4, 5));
+console.log('What have I done to these numbers? (10 and 3): ' + areYouMyFunction(10,3));
 
 
 // STEP 7
@@ -77,7 +77,7 @@ const multiLiner = word => {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('Multi-line arrow function:', multiLiner('hello'));
+console.log('Multi-line arrow function:', multiLiner('hello'));
 
 
 // STEP 8
