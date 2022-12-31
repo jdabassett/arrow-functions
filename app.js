@@ -179,7 +179,7 @@ let joe = new Student('Joe', 'Schmoe', 100);
 
 let myStudent = (name,age,hometown) => ({name:name, age:age,hometown:hometown,greeting: ()=>`Hi, my name is ${name}`});
 
-let joey = myStudent('Joey','Schmoe',200);
+let joey = myStudent('Joe','Schmoe',100);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this code to break!
@@ -201,7 +201,6 @@ joey.greetings = () => `Hi, my name is ${joey.name}`;
 console.log(joe.greeting());
 console.log(joey.greeting());
 console.log(joey.greetings());
-console.dir(joey);
 
 
 // TODO: After viewing the previous console.log(), return the code to a working state.
@@ -227,17 +226,19 @@ Student.prototype.scope = function() {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// joe.scope();
+joe.scope();
 
 Student.prototype.scopeArrow = () => console.log(this);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// joe.scopeArrow();
+joe.scopeArrow();
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
+//    'This' references joe the object.
 //
 // 2. What is "this" when joe.scopeArrow() is invoked?
+//    'This' references the object of the scope directly above it, in this case that is the global window object.
 //
 // 3. Explain why "this" is different when an arrow function is used.
-//
+//   Arrow functions don't reset 'this' to reference the object/function within which it is called, so 'this' will reference the object one scope above it. 
