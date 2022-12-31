@@ -7,7 +7,7 @@ const theOldWay = function(course) {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('The old way:', theOldWay('Code 301'));
+console.log('The old way: ' + theOldWay('Code 301d93') + ' and I like to eat boogers.');
 
 
 // STEP 2
@@ -16,9 +16,11 @@ const theOldWay = function(course) {
 const theNewWay = (course) => {
   return `I am currently enrolled in ${course}`;
 };
+const letMeTry = (course) => `I am currently enrolled in ${course}`;
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('The new way:', theNewWay('Code 301'));
+console.log('The new way:', theNewWay('Code 301'));
+console.log('My way: ' + letMeTry('Grandma\'s Baking Bootcamp'));
 
 
 // STEP 3
