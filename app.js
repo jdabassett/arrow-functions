@@ -16,7 +16,7 @@ console.log('The old way: ' + theOldWay('Code 301d93') + ' and I like to eat boo
 const theNewWay = (course) => {
   return `I am currently enrolled in ${course}`;
 };
-const letMeTry = (course) => `I am currently enrolled in ${course}`;
+let letMeTry = course => `I am currently enrolled in ${course}`;
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 console.log('The new way:', theNewWay('Code 301'));
@@ -30,7 +30,7 @@ const withoutParens = course => {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('Without parens:', withoutParens('Code 301'));
+console.log('Without parens:', withoutParens('Saint-o-Paulo\'s Playdough Playplace'));
 
 
 // STEP 4
@@ -40,7 +40,7 @@ const withoutParens = course => {
 const oneLiner = course => `I cam currently enrolled in ${course}`;
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('As a one-liner:', oneLiner('Code 301'));
+console.log('As a one-liner:', oneLiner('"Stylist Shay\'s Rebellion from Split-Ends"'));
 
 
 // STEP 5
@@ -50,8 +50,13 @@ const add = function(num1, num2) {
   return `${num1} + ${num2} = ${num1 + num2}`;
 };
 
+let mePapaWriteTerribleFunctionNames = (num1,num2) => {
+  return `${num1} +${num2} = ${num1 + num2}`;
+};
+
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('Let\'s do some math:', add(4, 5));
+console.log('Let\'s do some math:', add(4, 5));
+console.log('Anything you can add, I can add better: ',mePapaWriteTerribleFunctionNames(1,2));
 
 
 // STEP 6
