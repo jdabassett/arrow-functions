@@ -7,7 +7,7 @@ const theOldWay = function(course) {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-console.log('The old way: ' + theOldWay('Code 301d93') + ' and I like to eat boogers.');
+console.log('The old way: ' + theOldWay('Code 301n30') + ' and I like to eat boogers.');
 
 
 // STEP 2
@@ -242,3 +242,5 @@ joe.scopeArrow();
 //
 // 3. Explain why "this" is different when an arrow function is used.
 //   Arrow functions don't reset 'this' to reference the object/function within which it is called, so 'this' will reference the object one scope above it. 
+
+
